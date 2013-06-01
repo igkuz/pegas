@@ -1,5 +1,6 @@
 require "pegas/version"
 
 module Pegas
-  # Your code goes here...
+
+  autoload :Runner, 'pegas/runner'
 end
