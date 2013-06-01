@@ -1,0 +1,1 @@
+gem 'pegas', path: "/apps/pegas"
