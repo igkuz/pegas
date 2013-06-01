@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'pegas/runner'
+require 'pegas'
 
-Pegas::Runner.start('/apps/pegas/app/config.ru')
+Pegas::Runner.start('app/config.ru')
