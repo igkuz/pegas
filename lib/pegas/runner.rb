@@ -8,7 +8,7 @@ module Pegas
       raw = File.read(app_path)
       raw.sub!(/^__END__\n.*/, '')
       inner_app = eval("Rack::Builder.new {(\n#{raw}\n)}.to_app", TOPLEVEL_BINDING, app_path)
-      p inner_app
+      server = HttpServer.new(inner_app)
     end
   end
 end
